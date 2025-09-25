@@ -1,0 +1,28 @@
+# Dependências
+node_modules/
+.pnpm-store/
+
+# Build
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Environment
+.env
+.env.local
+.env.production
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Vercel
+.vercel

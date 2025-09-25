@@ -1,8 +1,14 @@
 {
   "name": "triad3-site",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "Site oficial da Triad3 - Plataforma de gestão patrimonial baseada na metodologia judaica de prosperidade",
+  "author": "Hélio Guilherme Dias Silva",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Helioguilhermediassilva/triad3-site.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
