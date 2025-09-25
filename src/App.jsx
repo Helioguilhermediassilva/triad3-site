@@ -18,6 +18,7 @@ import {
   Menu,
   X
 } from 'lucide-react'
+import triad3Logo from './assets/triad3-logo.jpeg'
 import './App.css'
 
 function App() {
@@ -28,17 +29,19 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-orange-50">
+    <div className="min-h-screen bg-gradient-to-br from-cyan-50 via-white to-lime-50">
       {/* Header */}
       <header className="bg-white/80 backdrop-blur-md border-b border-gray-200 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-orange-500 rounded-lg flex items-center justify-center">
-                <div className="w-6 h-6 border-2 border-white rounded-sm transform rotate-45"></div>
-              </div>
+              <img 
+                src={triad3Logo} 
+                alt="Triad3 Logo" 
+                className="w-12 h-12 object-contain rounded-lg"
+              />
               <div>
-                <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-orange-600 bg-clip-text text-transparent">
+                <h1 className="text-2xl font-bold bg-gradient-to-r from-cyan-600 via-teal-500 to-lime-500 bg-clip-text text-transparent">
                   TRIAD3
                 </h1>
                 <p className="text-xs text-gray-600">Patrimônio Inteligente</p>
@@ -47,11 +50,11 @@ function App() {
             
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
-              <a href="#inicio" className="text-gray-700 hover:text-blue-600 transition-colors">Início</a>
-              <a href="#metodologia" className="text-gray-700 hover:text-blue-600 transition-colors">Metodologia</a>
-              <a href="#funcionalidades" className="text-gray-700 hover:text-blue-600 transition-colors">Funcionalidades</a>
-              <a href="#publico" className="text-gray-700 hover:text-blue-600 transition-colors">Público</a>
-              <Button className="bg-gradient-to-r from-blue-600 to-orange-600 hover:from-blue-700 hover:to-orange-700">
+              <a href="#inicio" className="text-gray-700 hover:text-teal-600 transition-colors">Início</a>
+              <a href="#metodologia" className="text-gray-700 hover:text-teal-600 transition-colors">Metodologia</a>
+              <a href="#funcionalidades" className="text-gray-700 hover:text-teal-600 transition-colors">Funcionalidades</a>
+              <a href="#publico" className="text-gray-700 hover:text-teal-600 transition-colors">Público</a>
+              <Button className="bg-gradient-to-r from-cyan-500 via-teal-500 to-lime-500 hover:from-cyan-600 hover:via-teal-600 hover:to-lime-600 text-white">
                 Começar Agora
               </Button>
             </nav>
@@ -69,11 +72,11 @@ function App() {
           {isMenuOpen && (
             <nav className="md:hidden mt-4 pb-4 border-t border-gray-200 pt-4">
               <div className="flex flex-col space-y-4">
-                <a href="#inicio" className="text-gray-700 hover:text-blue-600 transition-colors">Início</a>
-                <a href="#metodologia" className="text-gray-700 hover:text-blue-600 transition-colors">Metodologia</a>
-                <a href="#funcionalidades" className="text-gray-700 hover:text-blue-600 transition-colors">Funcionalidades</a>
-                <a href="#publico" className="text-gray-700 hover:text-blue-600 transition-colors">Público</a>
-                <Button className="bg-gradient-to-r from-blue-600 to-orange-600 hover:from-blue-700 hover:to-orange-700 w-full">
+                <a href="#inicio" className="text-gray-700 hover:text-teal-600 transition-colors">Início</a>
+                <a href="#metodologia" className="text-gray-700 hover:text-teal-600 transition-colors">Metodologia</a>
+                <a href="#funcionalidades" className="text-gray-700 hover:text-teal-600 transition-colors">Funcionalidades</a>
+                <a href="#publico" className="text-gray-700 hover:text-teal-600 transition-colors">Público</a>
+                <Button className="bg-gradient-to-r from-cyan-500 via-teal-500 to-lime-500 hover:from-cyan-600 hover:via-teal-600 hover:to-lime-600 text-white w-full">
                   Começar Agora
                 </Button>
               </div>
@@ -85,11 +88,11 @@ function App() {
       {/* Hero Section */}
       <section id="inicio" className="py-20 px-4">
         <div className="container mx-auto text-center">
-          <Badge className="mb-6 bg-gradient-to-r from-blue-100 to-orange-100 text-blue-800 border-blue-200">
+          <Badge className="mb-6 bg-gradient-to-r from-cyan-100 to-lime-100 text-teal-800 border-teal-200">
             A Revolução da Eficiência Patrimonial
           </Badge>
           
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-orange-600 bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-600 via-teal-500 to-lime-500 bg-clip-text text-transparent">
             Transformando seu patrimônio em legado
           </h1>
           
@@ -99,18 +102,18 @@ function App() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="bg-gradient-to-r from-blue-600 to-orange-600 hover:from-blue-700 hover:to-orange-700">
+            <Button size="lg" className="bg-gradient-to-r from-cyan-500 via-teal-500 to-lime-500 hover:from-cyan-600 hover:via-teal-600 hover:to-lime-600 text-white">
               Começar Gratuitamente
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button size="lg" variant="outline" className="border-blue-300 text-blue-600 hover:bg-blue-50">
+            <Button size="lg" variant="outline" className="border-teal-300 text-teal-600 hover:bg-teal-50">
               Ver Demonstração
             </Button>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <TrendingUp className="h-8 w-8 text-white" />
               </div>
               <h3 className="font-semibold mb-2">Crescimento Inteligente</h3>
@@ -118,7 +121,7 @@ function App() {
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-to-r from-teal-500 to-lime-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield className="h-8 w-8 text-white" />
               </div>
               <h3 className="font-semibold mb-2">Proteção Total</h3>
@@ -126,7 +129,7 @@ function App() {
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 via-teal-500 to-lime-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <BarChart3 className="h-8 w-8 text-white" />
               </div>
               <h3 className="font-semibold mb-2">Gestão Completa</h3>
@@ -148,12 +151,12 @@ function App() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <Card className="text-center hover:shadow-lg transition-shadow">
+            <Card className="text-center hover:shadow-lg transition-shadow border-t-4 border-t-cyan-500">
               <CardHeader>
-                <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <DollarSign className="h-8 w-8 text-white" />
                 </div>
-                <CardTitle className="text-green-600">Dinheiro</CardTitle>
+                <CardTitle className="text-emerald-600">Dinheiro</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
@@ -162,12 +165,12 @@ function App() {
               </CardContent>
             </Card>
 
-            <Card className="text-center hover:shadow-lg transition-shadow">
+            <Card className="text-center hover:shadow-lg transition-shadow border-t-4 border-t-teal-500">
               <CardHeader>
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Building className="h-8 w-8 text-white" />
                 </div>
-                <CardTitle className="text-blue-600">Imóveis</CardTitle>
+                <CardTitle className="text-teal-600">Imóveis</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
@@ -176,12 +179,12 @@ function App() {
               </CardContent>
             </Card>
 
-            <Card className="text-center hover:shadow-lg transition-shadow">
+            <Card className="text-center hover:shadow-lg transition-shadow border-t-4 border-t-lime-500">
               <CardHeader>
-                <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-lime-500 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Gem className="h-8 w-8 text-white" />
                 </div>
-                <CardTitle className="text-purple-600">Ativos de Valor</CardTitle>
+                <CardTitle className="text-lime-600">Ativos de Valor</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
@@ -191,7 +194,7 @@ function App() {
             </Card>
           </div>
 
-          <div className="bg-gradient-to-r from-blue-50 to-orange-50 rounded-2xl p-8 text-center">
+          <div className="bg-gradient-to-r from-cyan-50 via-teal-50 to-lime-50 rounded-2xl p-8 text-center border border-teal-100">
             <h3 className="text-2xl font-bold mb-4">O Segredo da Prosperidade Judaica</h3>
             <blockquote className="text-lg text-gray-700 italic mb-4">
               "Guardamos nossa fortuna em 3 pilares: Dinheiro, Imóveis e Pedras Preciosas. 
@@ -214,9 +217,9 @@ function App() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow hover:border-teal-200">
               <CardHeader>
-                <BarChart3 className="h-8 w-8 text-blue-600 mb-2" />
+                <BarChart3 className="h-8 w-8 text-teal-600 mb-2" />
                 <CardTitle>Dashboard Centralizado</CardTitle>
               </CardHeader>
               <CardContent>
@@ -226,9 +229,9 @@ function App() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow hover:border-lime-200">
               <CardHeader>
-                <FileText className="h-8 w-8 text-orange-600 mb-2" />
+                <FileText className="h-8 w-8 text-lime-600 mb-2" />
                 <CardTitle>Importação Fiscal</CardTitle>
               </CardHeader>
               <CardContent>
@@ -238,9 +241,9 @@ function App() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow hover:border-cyan-200">
               <CardHeader>
-                <TrendingUp className="h-8 w-8 text-green-600 mb-2" />
+                <TrendingUp className="h-8 w-8 text-cyan-600 mb-2" />
                 <CardTitle>Fluxo de Caixa</CardTitle>
               </CardHeader>
               <CardContent>
@@ -250,9 +253,9 @@ function App() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow hover:border-emerald-200">
               <CardHeader>
-                <Smartphone className="h-8 w-8 text-purple-600 mb-2" />
+                <Smartphone className="h-8 w-8 text-emerald-600 mb-2" />
                 <CardTitle>Recomendações IA</CardTitle>
               </CardHeader>
               <CardContent>
@@ -262,9 +265,9 @@ function App() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow hover:border-teal-200">
               <CardHeader>
-                <Users className="h-8 w-8 text-blue-600 mb-2" />
+                <Users className="h-8 w-8 text-teal-600 mb-2" />
                 <CardTitle>Rede de Especialistas</CardTitle>
               </CardHeader>
               <CardContent>
@@ -274,7 +277,7 @@ function App() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow hover:border-red-200">
               <CardHeader>
                 <Shield className="h-8 w-8 text-red-600 mb-2" />
                 <CardTitle>Segurança Total</CardTitle>
@@ -303,7 +306,7 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-20 h-20 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="h-10 w-10 text-white" />
                 </div>
                 <CardTitle>Jovem Profissional</CardTitle>
@@ -316,15 +319,15 @@ function App() {
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                    <CheckCircle className="h-4 w-4 text-teal-500 mr-2" />
                     Educação financeira
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                    <CheckCircle className="h-4 w-4 text-teal-500 mr-2" />
                     Primeiros investimentos
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                    <CheckCircle className="h-4 w-4 text-teal-500 mr-2" />
                     Metodologia comprovada
                   </div>
                 </div>
@@ -333,7 +336,7 @@ function App() {
 
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-20 h-20 bg-gradient-to-r from-teal-500 to-lime-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <TrendingUp className="h-10 w-10 text-white" />
                 </div>
                 <CardTitle>Profissional Liberal</CardTitle>
@@ -346,15 +349,15 @@ function App() {
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                    <CheckCircle className="h-4 w-4 text-lime-500 mr-2" />
                     Gestão simplificada
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                    <CheckCircle className="h-4 w-4 text-lime-500 mr-2" />
                     Orientações confiáveis
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                    <CheckCircle className="h-4 w-4 text-lime-500 mr-2" />
                     Otimização de tempo
                   </div>
                 </div>
@@ -363,7 +366,7 @@ function App() {
 
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="w-20 h-20 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-20 h-20 bg-gradient-to-r from-lime-500 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Shield className="h-10 w-10 text-white" />
                 </div>
                 <CardTitle>Aposentado</CardTitle>
@@ -376,15 +379,15 @@ function App() {
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                    <CheckCircle className="h-4 w-4 text-yellow-500 mr-2" />
                     Preservação de capital
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                    <CheckCircle className="h-4 w-4 text-yellow-500 mr-2" />
                     Renda passiva
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                    <CheckCircle className="h-4 w-4 text-yellow-500 mr-2" />
                     Planejamento sucessório
                   </div>
                 </div>
@@ -463,7 +466,7 @@ function App() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-blue-600 to-orange-600">
+      <section className="py-20 px-4 bg-gradient-to-r from-cyan-600 via-teal-500 to-lime-500">
         <div className="container mx-auto text-center text-white">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Pronto para transformar seu patrimônio em legado?
@@ -474,7 +477,7 @@ function App() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+            <Button size="lg" className="bg-white text-teal-600 hover:bg-gray-100">
               Começar Gratuitamente
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
@@ -491,9 +494,11 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-orange-500 rounded-lg flex items-center justify-center">
-                  <div className="w-4 h-4 border-2 border-white rounded-sm transform rotate-45"></div>
-                </div>
+                <img 
+                  src={triad3Logo} 
+                  alt="Triad3 Logo" 
+                  className="w-8 h-8 object-contain rounded"
+                />
                 <h3 className="text-xl font-bold">TRIAD3</h3>
               </div>
               <p className="text-gray-400 mb-4">
